@@ -34,26 +34,28 @@ body
     justify-content: center;
     align-content: center;
     flex-direction: column;
+
 }
 
 .toggle label span {
-    background-color: black;
+    background-color:white;
     height:3px;
     width:70%;
     margin:2px 0px;
+
+   
 }
 
 .toggle
 {
     display: none;
+    
 }
 .header
 {
     display:flex;
     justify-content: flex-end;
     position: fixed;
-    top:10;
-    left:0;
     background-color: #1EBEA5;
     width:100%;
 }
@@ -80,6 +82,10 @@ body
     margin-left:5px;
 
 }
+.display-none
+{
+    display: none;
+}
 
 .header i
 {
@@ -102,9 +108,9 @@ body
 .justify-content
 {
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 17%;
 
-;}
+}
 
 .left-column
 { 
@@ -300,28 +306,165 @@ margin-top: 5%;
 {
     color:#E8E9EA;
 }
-@media screen and (max-width: 1250px) {
+.img
+{
+    display: none;
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1300px)
+{
     .header{
+        
+        
+        justify-content: center;
+    }
+    .header a
+    {
+        font-size: 12px;
+        padding: 0;
+        padding-right: 20px;
+        
+       
+
+    }
+    
+
+    
+    .whatsapp-image
+    {
+        margin-left: 200px;
+    }
+ 
+}
+
+@media screen and (max-width: 650px) {
+    .header{
+        
         flex-direction:column;
         display:none;
+        position: relative;
+        flex-wrap: nowrap;
+    
+        
+       
+
         
     }
-    #toggle-button:checked + .header{
+    
+ #toggle-button:checked + .header{
         display:flex;
-       
+
+    
+
+        }
         
-  }
     .toggle{
         display: flex;
-       
-    
-      
+
     }
+
+    .font-style
+    {
+        display: none;
+    }
+    .display-none
+    {   
+        display: flex;
+        text-align: justify;
+        justify-content: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .contact a
+   {
+       display:none;
+
+   }
+   
+   .img
+   {
+    display:flex;
+    justify-content: center;
+   
+   
+   }
     .links
     {
         display:flex;
         flex-direction:column; 
+        margin-left:30px;
        
     }
-  
+
+    .links a
+    {
+        border-bottom: 1px solid gainsboro;
+        margin-bottom: 1%;
+
+    }
+    .justify-content
+    {
+
+    background-color: #1EBEA5;
+
+    color:white;   
+    margin-top: 0;
+   
+    }
+    .light-font
+    {
+     display: none;
+    }
+    .display-flex
+    {
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 11px;
+        color: gray;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+    .left-column p
+    {
+        color:white !important;
+        text-align: center;
+    }
+    .list-items
+    {
+      display: flex;
+      padding-left: 15px;
+     
+      font-size: 20px;
+    }
+    .list-items li
+    {
+      padding-bottom:15px;
+      font-size: 13px;
+
+    }
+    .toggle-display
+    {
+      display: none;
+    }
+    .left-column
+    {
+        margin-bottom:0;
+        padding: 0;
+    }
+    .footer
+    {
+    margin: 0;
+    padding: 0;
+    padding-left: 16%;
+    }
+    .header a
+    {
+    padding: 10px;
+    }
+    .whatsapp-image
+    {
+        margin-left:0;
+    }
+ 
 }
