@@ -337,17 +337,24 @@ margin-top: 5%;
  
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 655px) {
     .header{
         
         flex-direction:column;
         display:none;
         position: relative;
         flex-wrap: nowrap;
+
     
         
        
 
+        
+    }
+    .whatsapp-chat-2
+    {
+        display: flex;
+    
         
     }
     
